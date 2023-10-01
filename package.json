@@ -1,6 +1,7 @@
 {
   "name": "crypto-voyance",
   "version": "0.1.0",
+  "homepage": "https://prateek-k0.github.io/crypto-voyance",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -15,6 +16,7 @@
     "axios": "^1.5.0",
     "chart.js": "^4.4.0",
     "d3": "^7.8.5",
+    "gh-pages": "^6.0.0",
     "html-react-parser": "^4.2.2",
     "lodash": "^4.17.21",
     "millify": "^6.1.0",
@@ -33,7 +35,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
