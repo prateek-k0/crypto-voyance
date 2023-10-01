@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/crypto-voyance/static/css/main.8a685450.css",
+    "main.js": "/crypto-voyance/static/js/main.325d385f.js",
+    "static/media/homepage-banner.jpg": "/crypto-voyance/static/media/homepage-banner.3802486e840484ccd4c2.jpg",
+    "index.html": "/crypto-voyance/index.html",
+    "main.8a685450.css.map": "/crypto-voyance/static/css/main.8a685450.css.map",
+    "main.325d385f.js.map": "/crypto-voyance/static/js/main.325d385f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a685450.css",
+    "static/js/main.325d385f.js"
+  ]
+}
