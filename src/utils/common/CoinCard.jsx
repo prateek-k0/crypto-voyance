@@ -28,7 +28,6 @@ const AnimatedCard = animated(Card);
 const CoinCard = ({ coinData, onCardClick }) => {
   const strokeColor = useMemo(() => coinData.change > 0 ? '#1f9358' : '#e04d5c', [coinData]);
   const [fade, api] = useSpring(() => ({
-    opacity: 0.6,
     scale: [1, 1],
     config: {
       mass: 1.8,
@@ -41,11 +40,9 @@ const CoinCard = ({ coinData, onCardClick }) => {
   const handleHoverOn = () => {
     api.start({
       from: {
-        opacity: 0.6,
         scale: [1, 1],
       },
       to: {
-        opacity: 1,
         scale: [1.1, 1.1],
       },
     })
@@ -54,11 +51,9 @@ const CoinCard = ({ coinData, onCardClick }) => {
   const handleHoverOff = () => {
     api.start({
       from: {
-        opacity: 1,
         scale: [1.1, 1.1],
       },
       to: {
-        opacity: 0.6,
         scale: [1, 1],
       },
     })
